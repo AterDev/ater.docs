@@ -3,31 +3,19 @@
 
 # 目录
 
-## DataStore
+## QueryDataStore
 ### 只读上下文
 `class DataStoreQueryBase<TContext, TEntity>`
 
 仅查询，不可进行`SaveChange`操作(会抛出异常提示)，所有查询都不使用`EF Core`的跟踪机制。
 
 
+## CommandDataStore
 ### 可写上下文
 `class DataStoreCommandBase<TContext, TEntity>`
 
-
-### 仓储上下文
-`class DataStoreContext`
-
-仓储上下文提供统一的仓储服务，对于一个实体对象，会有相应的`只读数据库上下文`和`命令数据库上下文`。
-如，对于实体`User`对应,会有对应的属性:
-- `UserQuery`
-- `UserCommand`
-
-同时，该类会开放数据库上下文，以便直接调用十一日方法。
-
-> 在实现实际业务时，通常不会直接引用该类，而是通过实体管理类，如`IXXXManager`对实体对象进行操作。
-
-
 ## Interface
+关于数据仓储及实体管理的基础接口定义
 
 ### 命令 (Command)
 
@@ -42,6 +30,22 @@
 
 ### 数据管理 (Manager)
 `interface IDomainManager<>`
+
+
+## Implement
+针对仓储及数据管理的实现类
+
+### 仓储上下文
+`class DataStoreContext`
+
+仓储上下文提供统一的仓储服务，对于一个实体对象，会有相应的`只读数据库上下文`和`命令数据库上下文`。
+如，对于实体`User`对应,会有对应的属性:
+- `UserQuery`
+- `UserCommand`
+
+同时，该类会开放数据库上下文，以便直接调用十一日方法。
+
+> 在实现实际业务时，通常不会直接引用该类，而是通过实体管理类，如`IXXXManager`对实体对象进行操作。
 
 # 实践
 对于典型的`User`的CURD的接口实现场景：
