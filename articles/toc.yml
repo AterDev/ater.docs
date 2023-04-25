@@ -1,0 +1,58 @@
+# This is an automatically generated file
+items:
+- name: Add your introductions here!
+  href: intro.md
+- name: Cn
+  href: cn/index.md
+  items:
+  - name: Cn
+    href: cn/index.md
+  - name: Ater.web.template
+    href: cn/ater.web.template/README.md
+    items:
+    - name: 说明
+      href: cn/ater.web.template/README.md
+    - name: Interface
+      href: cn/ater.web.template/Interface/DataStoreInterface.md
+      items:
+      - name: 数据仓储接口
+        href: cn/ater.web.template/Interface/DataStoreInterface.md
+    - name: 业务实现
+      href: cn/ater.web.template/快速入门.md
+    - name: 说明
+      href: cn/ater.web.template/DataStore.md
+    - name: 说明
+      href: cn/ater.web.template/Manager.md
+    - name: 问题
+      href: cn/ater.web.template/常见问题(How to).md
+    - name: 项目模板结构
+      href: cn/ater.web.template/项目模板结构/README.md
+      items:
+      - name: 说明
+        href: cn/ater.web.template/项目模板结构/README.md
+      - name: 说明
+        href: cn/ater.web.template/项目模板结构/Application.md
+      - name: 说明
+        href: cn/ater.web.template/项目模板结构/Core.md
+      - name: 说明
+        href: cn/ater.web.template/项目模板结构/Http.API.md
+      - name: 说明
+        href: cn/ater.web.template/项目模板结构/Share.md
+  - name: Docs
+    href: cn/docs/README.md
+    items:
+    - name: 说明
+      href: cn/docs/README.md
+  - name: Droplet cli
+    href: cn/droplet cli/README.md
+    items:
+    - name: README
+      href: cn/droplet cli/README.md
+    - name: Config
+      href: cn/droplet cli/config.md
+    - name: Dto
+      href: cn/droplet cli/dto.md
+    - name: Request
+      href: cn/droplet cli/request.md
+    - name: Webapi
+      href: cn/droplet cli/webapi.md
