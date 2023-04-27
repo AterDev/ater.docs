@@ -29,8 +29,9 @@ jobs:
     - run: dotnet tool update -g docfx
     - run: docfx build
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy GitHub Pages site
+      uses: actions/deploy-pages@v2.0.1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/_site
+        token:  ${{ secrets.GITHUB_TOKEN }}
+        artifact_name: "_site"
+
