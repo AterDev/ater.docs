@@ -1,0 +1,28 @@
+# This is an automatically generated file
+items:
+- name: Ater.web.template
+  href: ater.web.template/README.md
+  items:
+  - name: README
+    href: ater.web.template/README.md
+  - name: DataStore
+    href: ater.web.template/DataStore.md
+  - name: Manager
+    href: ater.web.template/Manager.md
+  - name: 常见问题How to
+    href: ater.web.template/常见问题(How to).md
+  - name: 快速入门
+    href: ater.web.template/快速入门.md
+- name: Droplet cli
+  href: droplet cli/README.md
+  items:
+  - name: README
+    href: droplet cli/README.md
+  - name: Config
+    href: droplet cli/config.md
+  - name: Dto
+    href: droplet cli/dto.md
+  - name: Request
+    href: droplet cli/request.md
+  - name: Webapi
+    href: droplet cli/webapi.md
