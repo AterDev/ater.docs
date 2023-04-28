@@ -19,13 +19,31 @@
     }
   ],
   "build": {
+    "globalMetadata": {
+      "_appTitle": "独思 DUSI.DEV",
+      "_appLogoPath": "./images/logo.png",
+      "_appFaviconPath": "./images/favicon.ico",
+      "_enableSearch": true,
+      "_appFooter": "  <strong style='color: rgb(238, 238, 238);'>Powered by</strong><span class='des'><a href='https://dotnet.github.io/docfx' target='_blank'>Docfx</a></span><span class='des'>GitHub Pages</span> ❤️<span class='des'>.NET</span><span class='des'><a href='https://dusi.dev' target='_blank'>dusi.dev</a></span><span></span>"
+    },
+    "sitemap": {
+      "baseUrl": "https://docs.dusi.dev",
+      "priority": 0.1,
+      "changefreq": "daily"
+    },
+    "template": [
+      "default",
+      "modern",
+      "template"
+    ],
     "content": [
       {
         "files": [
-          "**.yml",
-          "**.md",
-          "**/**/*.md",
-          "**/**/.yml"
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**",
+          "obj/**"
         ]
       }
     ],
@@ -33,16 +51,15 @@
       {
         "files": [
           "images/**"
+        ],
+        "exclude": [
+          "_site/**",
+          "obj/**"
         ]
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [
-      "default",
-      "modern"
-    ],
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false
