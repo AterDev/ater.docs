@@ -1,0 +1,10 @@
+.des {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 1px 1px #333;
+}
+
+footer {
+  text-align: center !important;
+}

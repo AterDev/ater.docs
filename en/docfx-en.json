@@ -39,7 +39,7 @@
     "content": [
       {
         "files": [
-          "**/*.{md,yml}"
+          "en/**/*.{md,yml}"
         ],
         "exclude": [
           "_site/**",
@@ -58,7 +58,7 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "../_site/en",
     "fileMetadataFiles": [],
     "postProcessors": [],
     "keepFileLink": false,

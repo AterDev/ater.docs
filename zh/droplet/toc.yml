@@ -1,0 +1,14 @@
+# This is an automatically generated file
+items:
+- name: README
+  href: README.md
+- name: Droplet
+  href: index.md
+- name: Config
+  href: config.md
+- name: Dto
+  href: dto.md
+- name: Request
+  href: request.md
+- name: Webapi
+  href: webapi.md

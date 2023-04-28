@@ -1,0 +1,30 @@
+# This is an automatically generated file
+items:
+- name: Interface
+  href: Interface/DataStoreInterface.md
+  items:
+  - name: 数据仓储接口
+    href: Interface/DataStoreInterface.md
+- name: 业务实现
+  href: 快速入门.md
+- name: 模板概要
+  href: 模板概要.md
+- name: 说明
+  href: DataStore.md
+- name: 说明
+  href: Manager.md
+- name: 问题
+  href: 常见问题(How to).md
+- name: 项目模板结构
+  href: 项目模板结构/README.md
+  items:
+  - name: 说明
+    href: 项目模板结构/README.md
+  - name: 说明
+    href: 项目模板结构/Application.md
+  - name: 说明
+    href: 项目模板结构/Core.md
+  - name: 说明
+    href: 项目模板结构/Http.API.md
+  - name: 说明
+    href: 项目模板结构/Share.md
