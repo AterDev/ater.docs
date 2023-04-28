@@ -24,7 +24,7 @@
       "_appLogoPath": "./images/logo.png",
       "_appFaviconPath": "./images/favicon.ico",
       "_enableSearch": true,
-      "_appFooter": "  <strong style='color: rgb(238, 238, 238);'>Powered by</strong><span class='des'><a href='https://dotnet.github.io/docfx' target='_blank'>Docfx</a></span><span class='des'>GitHub Pages</span> ❤️<span class='des'>.NET</span><span class='des'><a href='https://dusi.dev' target='_blank'>dusi.dev</a></span><span></span>"
+      "_appFooter": "  <strong style='color: rgb(238, 238, 238);'>Powered by</strong><span class='des'><a href='https://dotnet.github.io/docfx' target='_blank'>Docfx</a></span> | <span class='des'>GitHub Pages</span> ❤️<span class='des'>.NET</span> | <span class='des'><a href='https://dusi.dev' target='_blank'>dusi.dev</a></span><span></span>"
     },
     "sitemap": {
       "baseUrl": "https://docs.dusi.dev",
