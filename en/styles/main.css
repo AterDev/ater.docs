@@ -35,10 +35,6 @@ pre>code {}
   --bs-nav-tabs-border-radius: 0;
 }
 
-/*    .tabGroup > ul.nav.nav-tabs > .nav-item {
-        border-top: 4px solid #75b6e7;
-    }*/
-
 .card {
   border-radius: 0;
 }
@@ -63,14 +59,12 @@ pre>code {}
 
 nav#affix {
   border-radius: 6px;
-  border: 1px solid #404040;
+  border: 1px solid #70707047;
 }
 
 .affix h5 {
   padding: 0.8rem;
-  background: #2f2f2f;
   width: 100%;
-  color: #e6e6e6;
   font-weight: normal;
 }
 
@@ -78,8 +72,27 @@ nav#affix {
   padding: 0 0.8rem;
 }
 
-.affix ul li a {
+body:not([data-search])[data-layout=""]>main>.affix,
+body:not([data-search])[data-layout=conceptual]>main>.affix {
+  width: 320px;
+}
+
+
+[data-bs-theme=dark] .affix ul li a {
   color: #75b6e7;
+}
+
+[data-bs-theme=dark] .affix ul li a:hover {
+  color: #278cda;
+}
+
+[data-bs-theme=light] .affix ul li a {
+  color: #0065b3;
+}
+
+[data-bs-theme=light] .affix ul li a:hover {
+  color: #0065b3;
+  filter: brightness(80%);
 }
 
 [data-bs-theme=dark] {
