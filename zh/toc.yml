@@ -1,6 +1,6 @@
 # This is an automatically generated file
 items:
 - name: Ater.Web
-  href: ./ater.web/模板概要.html
+  href: ./ater.web/概述.html
 - name: Droplet CLI
-  href: ./droplet/index.html
+  href: ./droplet/概述.html
