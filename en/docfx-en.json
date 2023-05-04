@@ -39,7 +39,7 @@
     "content": [
       {
         "files": [
-          "en/**/*.{md,yml}",
+          "**/*.{md,yml}",
           "*.{md,yml}"
         ],
         "exclude": [
