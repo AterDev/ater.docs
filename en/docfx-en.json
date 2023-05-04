@@ -39,7 +39,8 @@
     "content": [
       {
         "files": [
-          "en/**/*.{md,yml}"
+          "en/**/*.{md,yml}",
+          "*.{md,yml}"
         ],
         "exclude": [
           "_site/**",

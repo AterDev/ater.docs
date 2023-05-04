@@ -8,4 +8,4 @@ Current Version:7.x
 
 ## Support Language
 
-- [中文文档](/zh/)
+- [中文文档](/zh/index.html)

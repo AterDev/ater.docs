@@ -8,4 +8,4 @@
 
 ## 支持语言
 
-- [The English documentation](/en/)
+- [The English documentation](/en/index.html)
