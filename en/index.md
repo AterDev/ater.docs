@@ -1,6 +1,7 @@
-# 欢迎
+# 🙋‍♂️Welcome
 
-您正在浏览开源项目的文档内容，目前提供以下两种语言:
+You are browsing the open source project documentation under **`Ater`** organization, you can view the documentation of different projects by navigating.
 
-- [中文](/zh)
-- [English](/en)
+## Support Language
+
+- [中文文档](/zh/)

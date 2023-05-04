@@ -9,40 +9,28 @@ footer {
   text-align: center !important;
 }
 
-body {
-  background: #171717;
-}
-
-.bg-body {
-  background: #171717;
-}
-
 article h1 {
   line-height: 1.3;
   font-size: 2.5rem;
-  color: #e6e6e6;
   margin: 2rem 0;
 }
 
 article h2 {
-  color: #e6e6e6;
   font-size: 2.125rem;
   margin-top: 32px;
   margin-bottom: 16px;
 }
 
-pre,
-pre>code {
-  background: #2f2f2f !important;
+article h3 {
+  font-size: 1.825rem;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
-.tabGroup>section {
-  background: #171717;
-}
+pre,
+pre>code {}
 
 .tabGroup>ul.nav.nav-tabs {
-  background: #171717;
-  --bs-nav-tabs-link-active-bg: #171717;
   --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) #171717;
   --bs-nav-tabs-border-radius: 0;
 }
@@ -97,12 +85,69 @@ nav#affix {
 [data-bs-theme=dark] {
   --bs-body-color: #e6e6e6;
   --bs-code-color: #e6e6e6;
+  --bs-body-bg: #171717;
+  --bs-body-bg-rgb: 23, 23, 23;
 }
 
-code {
+[data-bs-theme=dark] .hljs {
+  color: #c9d1d9;
+  background: #1d1d1d;
+}
+
+[data-bs-theme=dark] code {
   font-size: .875em;
   word-wrap: break-word;
   background-color: #515151;
   padding: 1px 3px;
   border-radius: 2px;
+}
+
+
+[data-bs-theme=dark] .hljs-keyword,
+[data-bs-theme=dark] .hljs-meta .hljs-keyword,
+[data-bs-theme=dark] .hljs-template-tag,
+[data-bs-theme=dark] .hljs-template-variable,
+[data-bs-theme=dark] .hljs-type,
+[data-bs-theme=dark] .hljs-variable.language_ {
+  color: #569CD6;
+}
+
+[data-bs-theme=dark] .hljs-title,
+[data-bs-theme=dark] .hljs-title.class_,
+[data-bs-theme=dark] .hljs-title.class_.inherited__,
+[data-bs-theme=dark] .hljs-title.function_ {
+  color: #4ec9b0;
+}
+
+[data-bs-theme=dark] .hljs-doctag,
+[data-bs-theme=dark] .hljs-comment {
+  color: #608b4e;
+}
+
+[data-bs-theme=dark] .hljs-built_in {
+  color: #569CD6;
+}
+
+[data-bs-theme=dark] .hljs-string,
+[data-bs-theme=dark] .hljs-number {
+  color: #ce9178;
+}
+
+[data-bs-theme=dark] pre code.hljs {
+  color: #d4d4d4;
+  font-size: 14px;
+  text-shadow: none;
+  font-family: 'Cascadia Code PL', 'Cascadia Code', 'Consolas', Menlo, Monaco, 'Courier New', Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+
+[data-bs-theme=dark] .hljs-selector-attr,
+[data-bs-theme=dark] .hljs-selector-tag {
+  color: #d7ba7d;
 }
