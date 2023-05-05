@@ -1,10 +1,10 @@
 Remove-Item .\_site -Recurse -Force
 # generate TOC
-DocFxTocGenerator -d ./zh/ater.web  -r -g
-DocFxTocGenerator -d ./zh/droplet  -r -g
+DocFxTocGenerator -d ./zh/ater.web  -r -g -s
+DocFxTocGenerator -d ./zh/droplet  -r -g -s
 
-DocFxTocGenerator -d ./en/ater.web  -r -g
-DocFxTocGenerator -d ./en/droplet  -r -g
+DocFxTocGenerator -d ./en/ater.web  -r -g -s
+DocFxTocGenerator -d ./en/droplet  -r -g -s
 
 # docfx build
 docfx build .\zh\docfx-zh.json
