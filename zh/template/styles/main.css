@@ -1,7 +1,7 @@
-.des {
+[data-bs-theme=dark] .des {
   font-size: 1rem;
   margin: 0 0.5rem;
-  color: #f0f0f0;
+  color: #e6e6e6;
   text-shadow: 1px 1px 1px 1px #333;
 }
 
@@ -26,9 +26,6 @@ article h3 {
   margin-top: 24px;
   margin-bottom: 16px;
 }
-
-pre,
-pre>code {}
 
 .tabGroup>ul.nav.nav-tabs {
   --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) #171717;
