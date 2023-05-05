@@ -1,5 +1,7 @@
 # This is an automatically generated file
 items:
+- name: 安装
+  href: 安装.md
 - name: 命令行
   href: 命令行/配置.md
   items:
@@ -11,6 +13,8 @@ items:
     href: 命令行/Manager生成.md
   - name: Request
     href: 命令行/前端请求服务.md
+  - name: Studio
+    href: 命令行/Studio.md
   - name: WebApi
     href: 命令行/控制器接口生成.md
 - name: Droplet CLI
