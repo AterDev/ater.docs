@@ -1,28 +1,32 @@
 # This is an automatically generated file
 items:
-- name: 命令行
-  href: 命令行/配置.md
+- name: Droplet CLI
+  href: 概述.md
+- name: 安装
+  href: 安装.md
+- name: Studio
+  href: Studio/使用Droplet Studio.md
   items:
-  - name: Config
-    href: 命令行/配置.md
+  - name: 使用Droplet Studio
+    href: Studio/使用Droplet Studio.md
+  - name: 配置说明
+    href: Studio/配置说明.md
+  - name: 疑难问题
+    href: Studio/疑难问题.md
+  - name: 高级自定义功能
+    href: Studio/高级自定义功能.md
+- name: 命令行
+  href: 命令行/Dto生成.md
+  items:
   - name: Dto
     href: 命令行/Dto生成.md
   - name: Manager
     href: 命令行/Manager生成.md
-  - name: Request
-    href: 命令行/前端请求服务.md
   - name: WebApi
     href: 命令行/控制器接口生成.md
-- name: Droplet CLI
-  href: 概述.md
-- name: Studio
-  href: Studio/高级自定义功能.md
-  items:
-  - name: 高级自定义功能
-    href: Studio/高级自定义功能.md
-  - name: 配置说明
-    href: Studio/配置说明.md
-  - name: 使用Droplet Studio
-    href: Studio/使用Droplet Studio.md
-  - name: 疑难问题
-    href: Studio/疑难问题.md
+  - name: Request
+    href: 命令行/前端请求服务生成.md
+  - name: Studio
+    href: 命令行/Studio.md
+  - name: Config
+    href: 命令行/配置.md

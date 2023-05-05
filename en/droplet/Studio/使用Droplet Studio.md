@@ -26,6 +26,20 @@ droplet studio 为开发者提供了Web UI 来管理和生成代码，相比使�
 
 当你添加了解决方案作为项目后，在主页选择项目，点击进入工作台，即可查看项目中包含的实体模型，通过`代码生成`或`批量操作`按钮即可生成对应的代码！
 
+### 查看实体
+
+查看实体模型，并根据实体模型生成相应的代码:
+
+![entities](../../images/code%20generate.png)
+
+选择要生成的内容
+
+![generate-actons](../../images/generate%20actions.png)
+
+在线编辑dto
+
+![edit dtos](../../images/edit%20dtos.png)
+
 ### 前端代码生成
 
 要使用前端代码生成，您首先需要先添加`Swagger url`，请参照以下步骤：
@@ -35,3 +49,5 @@ droplet studio 为开发者提供了Web UI 来管理和生成代码，相比使�
 - 如果地址正确，即可查看到接口文档，如果页面没有刷新，可点击右上角的刷新按钮
 - 文档加载成功后，点击右上角`js`图标，弹出生成弹窗
 - 填写相应的参数，然后点击生成
+
+![front-end](../../images/front-end.png)

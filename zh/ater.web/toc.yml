@@ -26,10 +26,10 @@ items:
   - name: 约定
     href: 约定和规范/约定.md
 - name: 示例
-  href: 示例/Manager.md
+  href: 示例/关注业务逻辑.md
   items:
-  - name: 说明
-    href: 示例/Manager.md
+  - name: 关注业务逻辑
+    href: 示例/关注业务逻辑.md
 - name: 自定义
   href: 自定义/自定义Manager行为.md
   items:
