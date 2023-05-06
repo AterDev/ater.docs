@@ -10,7 +10,7 @@
       ],
       "dest": "api",
       "includePrivateMembers": false,
-      "disableGitFeatures": false,
+      "disableGitFeatures": true,
       "disableDefaultFilter": false,
       "noRestore": false,
       "namespaceLayout": "flattened",
@@ -22,8 +22,9 @@
     "globalMetadata": {
       "_appTitle": "Genars",
       "_appLogoPath": "./images/logo.png",
-      "_appFaviconPath": "/.images/favicon.ico",
+      "_appFaviconPath": "./images/favicon.ico",
       "_enableSearch": true,
+      "_disableContribution": true,
       "_appFooter": "  <strong style='color: rgb(238, 238, 238);'>Powered by</strong><span class='des'><a href='https://dotnet.github.io/docfx' target='_blank'>Docfx</a></span> |  ❤️<span class='des'>.NET</span>"
     },
     "template": [
