@@ -1,0 +1,1 @@
+scp -r .\_site\** dev:/var/www/docs
