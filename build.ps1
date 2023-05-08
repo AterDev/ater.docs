@@ -12,7 +12,10 @@ DocFxTocGenerator -d ./en/droplet  -r -g -s
 docfx build .\zh\docfx-zh.json
 docfx build .\en\docfx-en.json
 
-Remove-Item .\_site\zh\styles\*.map -Force
-Remove-Item .\_site\en\styles\*.map -Force
+Remove-Item .\_site\zh\public\*.map -Force
+Remove-Item .\_site\en\public\*.map -Force
 
 Copy-Item .\src\index.html .\_site\
+
+
+docfx serve .\_site
