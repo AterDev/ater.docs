@@ -4,6 +4,8 @@ items:
   href: 概述.md
 - name: 安装
   href: 安装.md
+- name: 作为智能助手
+  href: 作为智能助手.md
 - name: Studio
   href: Studio/使用Droplet Studio.md
   items:

@@ -20,6 +20,8 @@ items:
       href: 教程/分层项目说明/Application.md
     - name: Http.API
       href: 教程/分层项目说明/Http.API.md
+  - name: 实体定义
+    href: 教程/实体定义.md
 - name: 约定和规范
   href: 约定和规范/约定.md
   items:
