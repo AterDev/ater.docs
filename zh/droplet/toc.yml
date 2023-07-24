@@ -4,29 +4,79 @@ items:
   href: 概述.md
 - name: 安装
   href: 安装.md
-- name: Studio
-  href: Studio/使用Droplet Studio.md
+- name: 快速入门
+  href: 快速入门.md
+- name: 新增功能
+  href: 新增功能/8.0新增功能.md
+  items:
+  - name: 8.0新增功能
+    href: 新增功能/8.0新增功能.md
+- name: 项目模板
+  href: 项目模板/分层项目说明
+  items:
+  - name: 分层项目说明
+    href: 项目模板/分层项目说明/Core.md
+    items:
+    - name: Core
+      href: 项目模板/分层项目说明/Core.md
+    - name: Share
+      href: 项目模板/分层项目说明/Share.md
+    - name: Application
+      href: 项目模板/分层项目说明/Application.md
+    - name: Http.API
+      href: 项目模板/分层项目说明/Http.API.md
+  - name: 项目结构说明
+    href: 项目模板/项目结构说明.md
+- name: 约定和规范
+  href: 约定和规范/约定.md
+  items:
+  - name: 约定
+    href: 约定和规范/约定.md
+- name: 教程
+  href: 教程/定义实体模型.md
+  items:
+  - name: 定义实体模型
+    href: 教程/定义实体模型.md
+  - name: 生成基础代码
+    href: 教程/生成基础代码.md
+  - name: 实现业务逻辑
+    href: 教程/实现业务逻辑.md
+  - name: 业务模块拆分
+    href: 教程/业务模块拆分.md
+  - name: 接口服务拆分
+    href: 教程/接口服务拆分.md
+  - name: 微服务实践
+    href: 教程/微服务实践.md
+- name: 自定义
+  href: 自定义/自定义Manager行为.md
+  items:
+  - name: 自定义Manager行为
+    href: 自定义/自定义Manager行为.md
+- name: Studio使用说明
+  href: Studio使用说明/使用Droplet Studio.md
   items:
   - name: 使用Droplet Studio
-    href: Studio/使用Droplet Studio.md
+    href: Studio使用说明/使用Droplet Studio.md
   - name: 配置说明
-    href: Studio/配置说明.md
+    href: Studio使用说明/配置说明.md
   - name: 疑难问题
-    href: Studio/疑难问题.md
+    href: Studio使用说明/疑难问题.md
   - name: 高级自定义功能
-    href: Studio/高级自定义功能.md
+    href: Studio使用说明/高级自定义功能.md
+  - name: 从7.x升级
+    href: Studio使用说明/从7.x升级.md
 - name: 命令行
   href: 命令行/Dto生成.md
   items:
-  - name: Dto
+  - name: 生成Dto
     href: 命令行/Dto生成.md
-  - name: Manager
+  - name: 生成Manager
     href: 命令行/Manager生成.md
-  - name: WebApi
+  - name: 生成WebApi
     href: 命令行/控制器接口生成.md
-  - name: Request
+  - name: Request 请求服务
     href: 命令行/前端请求服务生成.md
-  - name: Studio
+  - name: 使用图形化界面
     href: 命令行/Studio.md
   - name: Config
     href: 命令行/配置.md
