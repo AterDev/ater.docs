@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang>
 
 <head>
   <meta charset="UTF-8">
@@ -7,12 +7,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>文档 | 独思 DUSI.DEV</title>
   <script>
-    location.href = "/zh/"
   </script>
+  <style>
+    html,
+    body {
+      background-color: #171717;
+      color: #eeeeee;
+      font-family: Segoe UI, SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+    }
+
+    .block {
+      padding: 16px 24px;
+      width: 24%;
+      background-color: #091f2c;
+    }
+
+    h1 {
+      margin: 12px 0;
+    }
+
+    h2 {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      width: 100%;
+      background-color: #512bd4;
+      padding-top: 20px;
+      padding-bottom: 32px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    a {
+      color: #75b6e7;
+      cursor: pointer;
+      word-wrap: break-word;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="badge">
+    <div class="container">
+      <h1>Droplet Document</h1>
+      <div>
+        Intelligent and efficient code assisting tools for
+        <span>Web Developers</span>
+        using
+        <span>
+          ASP.NET Core and Typescript.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="block">
+        <h2>Droplet</h2>
+        <a href="">
+          V8.0 中文文档
+        </a>
+      </div>
+      <div class="block">
+        <h2>Droplet</h2>
+        <a href="">
+          V8.0 English Document
+        </a>
+      </div>
+    </div>
 
+  </div>
 </body>
 
 </html>
