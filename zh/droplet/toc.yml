@@ -53,10 +53,10 @@ items:
   - name: 自定义Manager行为
     href: 自定义/自定义Manager行为.md
 - name: Studio使用说明
-  href: Studio使用说明/使用Droplet Studio.md
+  href: Studio使用说明/使用DRY Studio.md
   items:
-  - name: 使用Droplet Studio
-    href: Studio使用说明/使用Droplet Studio.md
+  - name: 使用DRY Studio
+    href: Studio使用说明/使用DRY Studio.md
   - name: 配置说明
     href: Studio使用说明/配置说明.md
   - name: 疑难问题

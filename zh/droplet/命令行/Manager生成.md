@@ -4,7 +4,7 @@
 
 ## 命令
 
-`droplet manager <entity path> [options]`
+`dry manager <entity path> [options]`
 
 ## 参数
 

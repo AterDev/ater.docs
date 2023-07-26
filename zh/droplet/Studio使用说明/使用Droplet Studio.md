@@ -1,17 +1,17 @@
-# 使用Droplet Studio
+# 使用DRY Studio
 
-droplet studio 为开发者提供了Web UI 来管理和生成代码，相比使用命令行它具有以下优势：
+dry studio 为开发者提供了Web UI 来管理和生成代码，相比使用命令行它具有以下优势：
 
 - 可视化操作，更易学习和使用
 - 对多个项目进行管理
 - 可进行批量操作
 - 其他展示内容，如API文档和实体结构等
 
-## 启动droplet studio
+## 启动dry studio
 
-您只需要在命令行当中输入`droplet studio`即可启动Web UI界面，它会使用本地端口`9160`来启动一个网页应用。
+您只需要在命令行当中输入`dry studio`即可启动Web UI界面，它会使用本地端口`9160`来启动一个网页应用。
 
-## 使用droplet studio
+## 使用dry studio
 
 🎉恭喜，现在您已经成功启动了studio，下面来介绍如何使用它!
 

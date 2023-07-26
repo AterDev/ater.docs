@@ -23,7 +23,7 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 
 ## ManagerServiceCollectionExtensions.cs
 
-业务逻辑实现服务的注入扩展类，由ater.droplet.cli工具自动生成。
+业务逻辑实现服务的注入扩展类，由ater.dry.cli工具自动生成。
 
 ## QueryStore
 

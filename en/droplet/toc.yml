@@ -1,14 +1,14 @@
 # This is an automatically generated file
 items:
-- name: Droplet CLI
+- name: DRY CLI
   href: 概述.md
 - name: 安装
   href: 安装.md
 - name: Studio
-  href: Studio/使用Droplet Studio.md
+  href: Studio/使用DRY Studio.md
   items:
-  - name: 使用Droplet Studio
-    href: Studio/使用Droplet Studio.md
+  - name: 使用DRY Studio
+    href: Studio/使用DRY Studio.md
   - name: 配置说明
     href: Studio/配置说明.md
   - name: 疑难问题

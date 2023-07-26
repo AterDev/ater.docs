@@ -4,7 +4,7 @@
 
 ## 命令
 
-`droplet dto <entity path> [options]`
+`dry dto <entity path> [options]`
 
 ## 参数
 
