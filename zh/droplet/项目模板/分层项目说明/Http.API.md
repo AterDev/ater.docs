@@ -1,10 +1,12 @@
 # Http.API
 
-Rest API实现，是Web项目的运行项目，与普通的`ASP.NET Core`项目没什么区别。
+本项目是Web API项目，遵循RESTFul API对外提供接口能力，与普通的`ASP.NET Core`项目没什么区别。
 
-## csproj项目配置
+## csproj说明
 
-本模板项目配置，与正常的`ASP.NET Core`项目没什么不同，只是加入了集成前端的功能，如果你不需要，可以删除.
+项目文件与`ASP.NET Core`项目没什么不同，默认了集成前端的功能，打包时可将前端打包后的内容添加到`wwwroot`下，使前后端使用一个服务。
+
+如果你不需要，可以删除
 
 ```xml
   <SpaRoot>ClientApp\</SpaRoot>
@@ -38,9 +40,28 @@ Program是`ASP.NET Core`中极其重要的入口类，在这里我们需要完�
 - 初始化任务`InitDataTask`
 - 集成前端Angular项目配置
 
-可以根据实际需求自由替换。
+同时添加了扩展服务注册方法来简化服务注册：
 
-## RestControllerBase 基类
+- `AddAppComponents`，注入应用组件服务，如数据库/缓存/日志等，该方法在`Application\ServiceExtension.cs`。
+- `AddWebComponents`，注入Web组件服务，如身份认证/swagger/cors/健康检查等，该方法在`Http.API\Infrastructure\ServiceExtension.cs`
+
+以上服务配置内容可通过修改`appsettings.json`中的配置进行修改，如有必要也可直接修改代码。
+
+以下代码是提供数据仓储及业务逻辑服务的注入:
+
+```csharp
+// 3 数据及业务接口注入
+services.AddHttpContextAccessor();
+services.AddTransient<IUserContext, UserContext>();
+services.AddDataStore();
+services.AddManager();
+```
+
+## appsettings.json
+
+## Infrastructure
+
+### RestControllerBase 基类
 
 基类提供了对`Swagger`的支持，定义了基本路由，覆写了部分响应对象，
 

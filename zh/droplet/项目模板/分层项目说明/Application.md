@@ -9,9 +9,21 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 > [!NOTE]
 > 设计模式如`仓储模式、CQRS模式、观察者模式、中介模式`等是为了更好的组织代码，以及为实现业务功能服务的。本模板并不会特意去采用或实现某种模式，而是基于`方便、灵活、规范`的原则去组织代码。
 
-## AppConst
+## Const
 
 应用常量定义目录
+
+## DataStoreContext.cs
+
+仓储上下文，由工具自己维护和生成，请勿修改。
+
+## AppServiceCollectionExtensions.cs
+
+应用组件依赖注入扩展类，包含数据库、缓存、监测等组件的扩展方法。
+
+## ManagerServiceCollectionExtensions.cs
+
+业务逻辑实现服务的注入扩展类，由ater.droplet.cli工具自动生成。
 
 ## QueryStore
 
