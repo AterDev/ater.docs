@@ -1,6 +1,6 @@
 # Application
 
-Application层是业务实现的核心层，大多数业务逻辑实现都在该层进行定义和实现。
+Application是业务实现的核心层，大多数业务逻辑实现都在该层进行定义和实现。
 
 模板通过`QueryStore`和`CommandStore`对读写操作进行区分和隔离，然后通过`Manager`进行封装，这样在调用时，不需要关心数据的读写分离。
 
@@ -13,10 +13,6 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 
 应用常量定义目录
 
-## DataStoreContext.cs
-
-仓储上下文，由工具自己维护和生成，请勿修改。
-
 ## AppServiceCollectionExtensions.cs
 
 应用组件依赖注入扩展类，包含数据库、缓存、监测等组件的扩展方法。
@@ -24,14 +20,6 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 ## ManagerServiceCollectionExtensions.cs
 
 业务逻辑实现服务的注入扩展类，由ater.dry.cli工具自动生成。
-
-## QueryStore
-
-实体只读数据仓储的基类定义，请勿直接修改。
-
-## CommandStore
-
-实体可写数据仓储的基类定义，请勿直接修改。
 
 ## Implement
 
