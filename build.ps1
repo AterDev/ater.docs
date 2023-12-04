@@ -3,10 +3,10 @@ if (test-path .\_site) {
 }
 # generate TOC
 DocFxTocGenerator -d ./zh/ater.web  -r -g -s
-DocFxTocGenerator -d ./zh/droplet  -r -g -s
+DocFxTocGenerator -d ./zh/ater.dry  -r -g -s
 
 DocFxTocGenerator -d ./en/ater.web  -r -g -s
-DocFxTocGenerator -d ./en/droplet  -r -g -s
+DocFxTocGenerator -d ./en/ater.dry  -r -g -s
 
 # docfx build
 docfx build .\zh\docfx-zh.json

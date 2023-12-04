@@ -2,5 +2,5 @@
 items:
 - name: Ater.Web
   href: ./ater.web/overview.html
-- name: Droplet CLI
-  href: ./droplet/overview.html
+- name: Ater.Dry
+  href: ./ater.dry/overview.html

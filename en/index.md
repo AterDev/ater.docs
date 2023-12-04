@@ -4,7 +4,7 @@ You are browsing the open source project documentation under **`Ater`** organiza
 
 ## Version
 
-Current Version:7.x
+Current Version:8.x
 
 ## Support Language
 
