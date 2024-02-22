@@ -13,34 +13,12 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 
 应用常量定义目录
 
-## QueryStore
-
-实体只读数据仓储的基类定义，请勿直接修改。
-
-## CommandStore
-
-实体可写数据仓储的基类定义，请勿直接修改。
-
 ## Implement
 
 数据仓储的基础实现类，请勿直接修改。
 
-## Interface
-
-数据仓储的接口定义，请勿直接修改。
-
-提供两个扩展接口实现自定义
-
-`interface ICommandStoreExt<TEntity>`
-
-`interface IQueryStoreExt<TEntity>`
-
 > [!IMPORTANT]
 > 为了保持兼容性，请不要直接修改以上默认生成的内容，如果你需要自定义，可通过`partial class`、`扩展接口`以及`继承类`的方式实现。
-
-## IManager
-
-业务逻辑接口目录，可通过生成器生成，可自由修改。
 
 ## Manager
 
@@ -62,7 +40,6 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 
 ### 业务层实现
 
-- 创建或修改`IUserManager`接口，定义功能接口。
 - 创建或修改`UserManager.cs`,继承`DomainManagerBase<User>`,实现`IUserManager`定义的业务逻辑。
 - 父类已实现常见的**CURD**操作。
 
