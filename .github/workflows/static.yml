@@ -32,6 +32,7 @@ jobs:
     - run: DocFxTocGenerator -d ./zh/ater.dry  -r -g -s
     - run: DocFxTocGenerator -d ./en/ater.web  -r -g -s
     - run: DocFxTocGenerator -d ./en/ater.dry  -r -g -s
+    
     - run: docfx build ./zh/docfx-zh.json
     - run: docfx build ./en/docfx-en.json
     - run: rm -rf ./_site/styles/*.map

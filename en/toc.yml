@@ -1,6 +1,6 @@
 # This is an automatically generated file
 items:
-- name: Ater.Web
-  href: ./ater.web/overview.html
-- name: Ater.Dry
-  href: ./ater.dry/overview.html
+  - name: Ater.Web
+    href: ./ater.web/overview.html
+  - name: Ater.Dry
+    href: ./ater.dry/overview.html
