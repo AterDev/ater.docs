@@ -4,9 +4,9 @@ Precondition: You have installed and created a project template
 
 ## Check the configuration file
 
-Templates default to`PostgreSQL` as a relational database and`Redis` as distributed cache support.
+Templates default to `PostgreSQL` as a relational database and `Redis` as distributed cache support.
 
-You need to configure the connection string in`appsettings.json`and replace the default database if you want.
+You need to configure the connection string in `appsettings.json`and replace the default database if you want.
 
 ## Defining Solid Models
 
@@ -21,18 +21,18 @@ You need to configure the connection string in`appsettings.json`and replace the 
 Use`dry studio` to generate`dto`,`Manager`,`Controller` and other basic code.
 
 > [!TIP]
->For more information about`dry cli`, see[the dry cli documentation.](https://docs.dusi.dev/zh/ater.dry/%E6%A6%82%E8%BF%B0.html)
+>For more information about`dry cli`, see[the dry cli documentation.](https://docs.dusi.dev/en/ater.dry/Overview.html)
 
 ## Implement custom business logic
 
-Implement business logic in the`Application``Manager`directory, usually including`筛选查询`,`添加实体`, and`更新实体`.
+Implement business logic in the`Application``Manager`directory, usually including `Filter Query`, `Add Entity`, and `Update Entity`.
 
 ### Filter query
 
 Steps to build custom query criteria:
 
-1. Construct your own query condition`Queryable`
-2. Call`FilterAsync<T>` method to get results
+1. Construct your own query condition `Queryable`
+2. Call `FilterAsync<T>` method to get results
 
 Code example:
 
@@ -70,12 +70,12 @@ public override async Task<Discuss> AddAsync(Discuss entity)
 
 ### Updating the entity
 
-`manager`provides a`GetCurrent` method to get the current (`可写数据库上下文`) entity.
+`Manager` provides a `GetCurrentAsync` method to get the current (`writable dbcontext`) entity.
 
 In the controller, the entity will be obtained first. If it does not exist, it will directly return to`404`.
 
 The entity update method passes two parameters, one for the entity itself and one for the submitted`DTO` object.
-The entity itself is obtained by using`GetCurrent` method in the controller, and can be passed directly as a parameter.
+The entity itself is obtained by using`GetCurrentAsync` method in the controller, and can be passed directly as a parameter.
 
 Code example:
 
@@ -98,11 +98,11 @@ public override async Task<ResourceTypeDefinition> UpdateAsync(ResourceTypeDefin
 
 ### For more information
 
-`manager`provides default query method for details, which can directly pass query conditions.
+`Manager`provides default query method for details, which can directly pass query conditions.
 
 If you customize queries, such as querying associated content, you need to add new methods to implement them.
 
-`manager`provides`Query.Db` members to query directly against the current model.
+`Manager`provides `Query.Db` members to query directly against the current model.
 
 Code example:
 
@@ -117,9 +117,9 @@ public async Task<ResourceGroup?> FindAsync(Guid id)
 
 ### Deletion processing
 
-Delete defaults to soft delete, and if you want to modify this behavior, set`EnableSoftDelete` to false in`CommandStoreBase`class.
+Delete defaults to soft delete, and if you want to modify this behavior, set`EnableSoftDelete` to false in your `Manager` class. like:
 
-If you want to cancel only for an entity, you can override`EnableSoftDelete`in the`XXXCommandStore`class corresponding to the entity and set it to false.
+`Command.EnableSoftDelete = false;`
 
 Deletion sometimes involves**association deletion**, example code:
 

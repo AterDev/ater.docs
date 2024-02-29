@@ -1,6 +1,6 @@
-# Create and run projects
+# Create and run project
 
-## create solutions
+## Create solutions
 
 Click the Create button to go to the solution creation page.
 
@@ -10,16 +10,16 @@ You will see the following page, please fill in the solution name and local path
 
 :::image type="content" source="../ images/createSolutionPage.jpg" alt-text="create solution page":::
 
-## run the solution
+## Run the solution
 
 Now open the solution using your favorite IDE, or click the Open button directly in Studio.
 
-### profile
+### Configuration
 
 Please check the configuration file contents first, including:
 
-- Configure database connection strings. Please configure the relevant connection strings in`ConnectionStrings` in`appsettings.json` under`Http.API`project.
-- `Cache`configuration of`Components` in configuration file, optional "Redis" or "Memory".
+- Configure database connection strings. Please configure the relevant connection strings in `ConnectionStrings` in `appsettings.json` under `Http.API` project.
+- `Cache` configuration of `Components` in configuration file, optional "Redis" or "Memory".
 
 You can refer to the following configuration instructions:
 
@@ -62,24 +62,24 @@ You can refer to the following configuration instructions:
   },
 ```
 
-### database migration
+### Database migration
 
-The template uses PostgreSQL by default. If you use another database provider, you can find the method for injecting database services in`Application` project`AppServiceCollectionExtensions.cs`
+The template uses PostgreSQL by default. If you use another database provider, you can find the method for injecting database services in `Application` project `AppServiceCollectionExtensions.cs`
 
-Please use`dotnet ef` command to generate migration code under`Http.API`project. Or run`EFMigrations.ps1` script directly, such as:
+Please use `dotnet ef` command to generate migration code under `Http.API` project. Or run `EFMigrations.ps1` script directly, such as:
 
 ```powershell
 .\EFMigrations.ps1 Init
 ```
 
-### run the project
+### Run the project
 
-Since 8.0 added support for`.NET Aspire`, you now have two ways to run programs.
+<!-- Since 8.0 added support for `.NET Aspire`, you now have two ways to run programs.
 
-1. Run`AppHost` project, which is run using the way Aspire provides it, and it will open`Dashboard`.
-2. Run`Http.API` project directly, which opens the`Swagger UI`of the interface in the browser.
+1. Run `AppHost` project, which is run using the way Aspire provides it, and it will open `Dashboard`. -->
+Run `Http.API` project directly, which opens the `Swagger UI` of the interface in the browser.
 
-You can choose the appropriate way to run the program.
+<!-- You can choose the appropriate way to run the program. -->
 
 > [!NOTE]
->When the interface program runs, it automatically commits migration and creates default users. If you want to change this behavior, modify the code in`InitDataTask.cs`
+> When the interface program runs, it automatically commits migration and creates default users. If you want to change this behavior, modify the code in `InitDataTask.cs`

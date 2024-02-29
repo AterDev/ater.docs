@@ -1,10 +1,10 @@
-# installation
+# Install
 
-## premise
+## Require
 
-- Installing the[`.NET SDK`](https://dotnet.microsoft.com/zh-cn/download)
+- Installing the [`.NET SDK`](https://dotnet.microsoft.com/zh-cn/download)
 
-## version
+## Version
 
 First check the package version, the tool depends on the. NET SDK, and the corresponding relationship is as follows:
 
@@ -12,19 +12,19 @@ First check the package version, the tool depends on the. NET SDK, and the corre
 |-|-|-|
 |8.x| 8.0+| current version|
 
-## installation tool
+## Install tool
 
-Use`dotnet tool` command to install:
+Use `dotnet tool` command to install:
 
 ```pwsh
 dotnet tool install --global ater.dry
 ```
 
-You can check the latest version in[nuget](https://www.nuget.org/packages/ater.dry)!
+You can check the latest version in [nuget](https://www.nuget.org/packages/ater.dry)!
 
-## use
+## Use
 
-### Using graphical interfaces
+### use the Web UI
 
 One command to start the UI!
 
@@ -33,19 +33,19 @@ dry studio
 ```
 
 > [!NOTE]
->If a new version is installed, run`dry studio update` before starting Studio.
+>If a new version is installed, run `dry studio update` before starting Studio.
 
-### using the command line
+### use the command line
 
-You can use`dry --help` check command help information.
+You can use `dry --help` check command help information.
 
-Or use`dry[command] --help` see specific command help information.
+Or use `dry[command] --help` see specific command help information.
 
 > [!TIP]
 >Using command-line tools, you can generate relevant code independently of the project structure! Because you can specify specific entity paths and code output paths.
 
-## next
+## Next step
 
 Congratulations on successfully installing and running the tool.
 
-You can now[create](创建并运行项目.md) new solution projects using this tool.
+You can now [create](创建并运行项目.md) new solution projects using this tool.
