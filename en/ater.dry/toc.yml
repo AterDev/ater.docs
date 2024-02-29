@@ -1,32 +1,41 @@
 # This is an automatically generated file
 items:
-- name: Droplet CLI
-  href: 概述.md
-- name: 安装
-  href: 安装.md
-- name: Studio
-  href: Studio/使用Droplet Studio.md
-  items:
-  - name: 使用Droplet Studio
-    href: Studio/使用Droplet Studio.md
-  - name: 配置说明
-    href: Studio/配置说明.md
-  - name: 疑难问题
-    href: Studio/疑难问题.md
-  - name: 高级自定义功能
-    href: Studio/高级自定义功能.md
-- name: 命令行
-  href: 命令行/Dto生成.md
-  items:
-  - name: Dto
-    href: 命令行/Dto生成.md
-  - name: Manager
-    href: 命令行/Manager生成.md
-  - name: WebApi
-    href: 命令行/控制器接口生成.md
-  - name: Request
-    href: 命令行/前端请求服务生成.md
+  - name: Ater.Dry
+    href: Overview.md
+  - name: Install
+    href: Install.md
+  - name: Create and run project
+    href: Create and Run Project.md
   - name: Studio
-    href: 命令行/Studio.md
-  - name: Config
-    href: 命令行/配置.md
+    href: Studio/Use Dry Studio.md
+    items:
+      - name: Using Dry Studio
+        href: Studio/Use Dry Studio.md
+      - name: configuration description
+        href: Studio/Configuration Description.md
+      - name: Problem
+        href: Studio/Trouble.md
+      - name: Advanced Custom Features
+        href: Studio/Advanced customization.md
+  - name: code generation description
+    href: Code Generation Instructions/DTO Generation.md
+    items:
+      - name: DTO generation description
+        href: Code Generation Instructions/DTO Generation.md
+      - name: Manager Code Generation Description
+        href: Code Generation Description/Manager Generation.md
+  - name: Command line
+    href: Command line/Dto generate.md
+    items:
+      - name: Dto
+        href: Command line/Dto generate.md
+      - name: Manager
+        href: Command Line/Manager Generates.md
+      - name: WebApi
+        href: Command Line/Controller Interface Generation.md
+      - name: Request
+        href: Command Line/Front End Request Service Generation.md
+      - name: Studio
+        href: Command line/Studio.md
+      - name: Config
+        href: Command Line/Configuration.md

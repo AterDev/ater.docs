@@ -40,16 +40,6 @@ Program是`ASP.NET Core`中极其重要的入口类，在这里我们需要完�
 
 可以根据实际需求自由替换。
 
-## RestControllerBase 基类
-
-基类提供了对`Swagger`的支持，定义了基本路由，覆写了部分响应对象，
-
-你可以在`Infrastructure\RestControllerBase.cs`中查看。
-
-## ClientApp
-
-集成前端`Angular`项目，如果不需要，可直接删除。
-
 ## Middleware
 
 自定义中间件实现

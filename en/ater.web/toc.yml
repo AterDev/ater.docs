@@ -2,27 +2,31 @@
 items:
 - name: Ater.Web 是什么
   href: 概述.md
-- name: 快速入门
-  href: 快速入门.md
 - name: 教程
   href: 教程/项目结构说明.md
   items:
   - name: 项目结构说明
     href: 教程/项目结构说明.md
   - name: 分层项目说明
-    href: 教程/分层项目说明/Core.md
+    href: 教程/分层项目说明/Entity.md
     items:
-    - name: Core
-      href: 教程/分层项目说明/Core.md
+    - name: Entity
+      href: 教程/分层项目说明/Entity.md
     - name: Share
       href: 教程/分层项目说明/Share.md
     - name: Application
       href: 教程/分层项目说明/Application.md
     - name: Http.API
       href: 教程/分层项目说明/Http.API.md
+  - name: 组织代码
+    href: 教程/组织代码.md
+- name: 快速入门
+  href: 快速入门.md
 - name: 约定和规范
-  href: 约定和规范/约定.md
+  href: 约定和规范/实体定义.md
   items:
+  - name: 实体定义
+    href: 约定和规范/实体定义.md
   - name: 约定
     href: 约定和规范/约定.md
 - name: 示例

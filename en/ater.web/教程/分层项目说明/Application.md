@@ -2,45 +2,24 @@
 
 Application层是业务实现的核心层，大多数业务逻辑实现都在该层进行定义和实现。
 
-模板通过`QueryStore`和`CommandStore`对读写操作进行区分和隔离，然后通过`Manager`进行封装，这样在调用时，不需要关心数据的读写分离。
-
-模板通过`QueryStore`和`CommandStore`对`DbContext`和`DbSet`进行了封装，但这不是为了实现`仓储模式`，而是结合实际使用场景，提供常用的方法封装，同时实现自定义功能。
+通常你只需要定义(或通过代码生成器生成) `[实体名]Manager.cs`的文件来实现业务逻辑即可。定义的Manager要继承`ManagerBase`类，该类提供了
+`Query`和`Command`的属性，分别对应了`只读数据库`和`读写数据库`，以进行读写分离操作。
 
 > [!NOTE]
-> 设计模式如`仓储模式、CQRS模式、观察者模式、中介模式`等是为了更好的组织代码，以及为实现业务功能服务的。本模板并不会特意去采用或实现某种模式，而是基于`方便、灵活、规范`的原则去组织代码。
+> 设计模式如`仓储模式、CQRS模式、观察者模式、中介模式`等是为了更好的组织代码，以及为实现业务功能服务的。本模板并不会特意去采用或实现某种模式，而是基于`方便、灵活、可复用`的原则去组织代码。
 
 ## AppConst
 
 应用常量定义目录
 
-## QueryStore
-
-实体只读数据仓储的基类定义，请勿直接修改。
-
-## CommandStore
-
-实体可写数据仓储的基类定义，请勿直接修改。
-
 ## Implement
 
-数据仓储的基础实现类，请勿直接修改。
+包含了`ManagerBase.cs`基类，实现常见的数据库读写操作。
 
-## Interface
-
-数据仓储的接口定义，请勿直接修改。
-
-提供两个扩展接口实现自定义
-
-`interface ICommandStoreExt<TEntity>`
-
-`interface IQueryStoreExt<TEntity>`
+提供默认的`UserContext`，用户上下文封装实现。
 
 > [!IMPORTANT]
 > 为了保持兼容性，请不要直接修改以上默认生成的内容，如果你需要自定义，可通过`partial class`、`扩展接口`以及`继承类`的方式实现。
-
-## IManager
-
-业务逻辑接口目录，可通过生成器生成，可自由修改。
 
 ## Manager
 
@@ -62,7 +41,6 @@ Application层是业务实现的核心层，大多数业务逻辑实现都在该
 
 ### 业务层实现
 
-- 创建或修改`IUserManager`接口，定义功能接口。
 - 创建或修改`UserManager.cs`,继承`DomainManagerBase<User>`,实现`IUserManager`定义的业务逻辑。
 - 父类已实现常见的**CURD**操作。
 
