@@ -8,12 +8,12 @@ items:
   - name: 项目结构说明
     href: 教程/项目结构说明.md
   - name: 分层项目说明
-    href: 教程/分层项目说明/Entity.md
+    href: 教程/分层项目说明/Infrastructure.md
     items:
-    - name: Entity
-      href: 教程/分层项目说明/Entity.md
-    - name: Share
-      href: 教程/分层项目说明/Share.md
+    - name: Infrastructure
+      href: 教程/分层项目说明/Infrastructure.md
+    - name: Definition
+      href: 教程/分层项目说明/Definition.md
     - name: Application
       href: 教程/分层项目说明/Application.md
     - name: Http.API
@@ -27,6 +27,8 @@ items:
   items:
   - name: 实体定义
     href: 约定和规范/实体定义.md
+  - name: 第三方依赖
+    href: 约定和规范/第三方依赖.md
   - name: 约定
     href: 约定和规范/约定.md
 - name: 示例

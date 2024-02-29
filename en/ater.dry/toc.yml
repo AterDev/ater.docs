@@ -1,41 +1,41 @@
 # This is an automatically generated file
 items:
-  - name: Ater.Dry
-    href: Overview.md
-  - name: Install
-    href: Install.md
-  - name: Create and run project
-    href: Create and Run Project.md
+- name: Ater.Dry
+  href: Overview.md
+- name: Installation
+  href: Install.md
+- name: Studio
+  href: Studio/Dry Studio.md
+  items:
+  - name: Dry Studio
+    href: Studio/Dry Studio.md
+  - name: 疑难问题
+    href: Studio/疑难问题.md
+  - name: 配置说明
+    href: Studio/配置说明.md
+  - name: 高级自定义功能
+    href: Studio/高级自定义功能.md
+- name: Command line
+  href: Command line/Dto生成.md
+  items:
+  - name: Dto
+    href: Command line/Dto生成.md
+  - name: Manager
+    href: Command line/Manager生成.md
+  - name: WebApi
+    href: Command line/控制器接口生成.md
+  - name: Request
+    href: Command line/前端请求服务生成.md
   - name: Studio
-    href: Studio/Use Dry Studio.md
-    items:
-      - name: Using Dry Studio
-        href: Studio/Use Dry Studio.md
-      - name: configuration description
-        href: Studio/Configuration Description.md
-      - name: Problem
-        href: Studio/Trouble.md
-      - name: Advanced Custom Features
-        href: Studio/Advanced customization.md
-  - name: code generation description
-    href: Code Generation Instructions/DTO Generation.md
-    items:
-      - name: DTO generation description
-        href: Code Generation Instructions/DTO Generation.md
-      - name: Manager Code Generation Description
-        href: Code Generation Description/Manager Generation.md
-  - name: Command line
-    href: Command line/Dto generate.md
-    items:
-      - name: Dto
-        href: Command line/Dto generate.md
-      - name: Manager
-        href: Command Line/Manager Generates.md
-      - name: WebApi
-        href: Command Line/Controller Interface Generation.md
-      - name: Request
-        href: Command Line/Front End Request Service Generation.md
-      - name: Studio
-        href: Command line/Studio.md
-      - name: Config
-        href: Command Line/Configuration.md
+    href: Command line/Studio.md
+  - name: Config
+    href: Command line/配置.md
+- name: Code Generation Instructions
+  href: Code Generation Instructions/DTO生成.md
+  items:
+  - name: DTO生成说明
+    href: Code Generation Instructions/DTO生成.md
+  - name: Manager代码生成说明
+    href: Code Generation Instructions/Manager生成.md
+- name: Create and run projects
+  href: Create and run project.md
